@@ -37,6 +37,10 @@ public class GroupeClasse {
 
     }
 
+    /**
+     * ma javadoc parfaite
+     * @param etudiant
+     */
     public void enleverEtudiant(Etudiant etudiant) {
        //Challenge implémenter ceci!!
     }
