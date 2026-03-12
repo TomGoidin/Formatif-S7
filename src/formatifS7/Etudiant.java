@@ -8,6 +8,8 @@ package formatifS7;
  */
 public class Etudiant {
 
+    //commentaire bizarre
+
     /* Les constantes de la classe étudiant     */
     public static final String INFORMATIQUE = "Informatique";
     public static final String LETTRES = "Lettres";
