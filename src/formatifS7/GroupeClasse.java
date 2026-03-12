@@ -21,6 +21,10 @@ public class GroupeClasse {
         this.nom = nom;
     }
 
+    /**
+     *
+     * @param etudiant
+     */
     public void addEtudiant(Etudiant etudiant){
         if(nombreEtudiants < MAX_ETUDIANTS) {
             //on peut insérer
