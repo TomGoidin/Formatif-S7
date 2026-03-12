@@ -7,9 +7,9 @@ package formatifS7;
  * @since 2022-11-16
  */
 public class GroupeClasse {
-    public static final int MAX_ETUDIANTS = 26;
+    public static final int MAXIMUM_ETU = 26;
 
-    private Etudiant[] etudiants = new Etudiant[MAX_ETUDIANTS];
+    private Etudiant[] etudiants = new Etudiant[MAXIMUM_ETU];
 
     private String nom;
 
@@ -25,7 +25,7 @@ public class GroupeClasse {
      * @param etudiant
      */
     public void addEtudiant(Etudiant etudiant){
-        if(nbrEtu < MAX_ETUDIANTS) {
+        if(nbrEtu < MAXIMUM_ETU) {
             //on peut insérer
             etudiants[nbrEtu] = etudiant;
             nbrEtu++;
