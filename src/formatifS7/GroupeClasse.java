@@ -15,21 +15,20 @@ public class GroupeClasse {
 
     //cette variable maintien le nombre d'etudiants reels pour eviter de parcourir la liste inutilement
     //Elle doit rester invisible de l'exterieur!!
-    private int nombreEtudiants;
+    private int nbrEtu;
 
     public GroupeClasse(String nom) {
         this.nom = nom;
     }
-
     /**
-     *
+
      * @param etudiant
      */
     public void addEtudiant(Etudiant etudiant){
-        if(nombreEtudiants < MAX_ETUDIANTS) {
+        if(nbrEtu < MAX_ETUDIANTS) {
             //on peut insérer
-            etudiants[nombreEtudiants] = etudiant;
-            nombreEtudiants++;
+            etudiants[nbrEtu] = etudiant;
+            nbrEtu++;
         }
         else {
             System.out.println("Impossible d'insérer " + etudiant.getNom() + " a la " + this);
@@ -48,15 +47,15 @@ public class GroupeClasse {
 
 
     public String[] listeNomsEtudiants(){
-        String[] nonNulls = new String[nombreEtudiants];
-        for (int i = 0; i < nombreEtudiants; i++) {
+        String[] nonNulls = new String[nbrEtu];
+        for (int i = 0; i < nbrEtu; i++) {
             nonNulls[i] = etudiants[i].getNom();
         }
         return nonNulls;
     }
 
     public int nombreEtudiants() {
-        return nombreEtudiants;
+        return nbrEtu;
     }
 
     @Override
